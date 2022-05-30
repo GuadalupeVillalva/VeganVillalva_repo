@@ -1,0 +1,476 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color:#fde8cb;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Header */
+#navHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #90a82e;
+    width: 100%;
+    padding: 0.938rem 2rem;
+    grid-area: navHeader;
+}
+
+.sobreNosotros {
+    display: none;
+}
+
+#navHeader div {
+    align-self: center;
+}
+
+#navHeader ul {
+    display: flex;
+    margin-top: 0.50rem;
+}
+
+#navHeader a {
+    color: #2f261a;
+    font-weight: bold;
+    margin: 0.23rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navHeader a:hover {
+    color: black;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #90a82e;
+    padding: 2rem;
+    grid-area: footer;
+}
+
+.icon {
+    margin: 0.80rem;
+    text-decoration: none;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 0.80rem;
+    color: #000000ce;
+}
+
+/* INDEX*/
+#bodyIndex {
+    display: grid;
+    grid-template-areas: 
+                        "navHeader"
+                        "sectionOfertas"
+                        "sectionNovedades"
+                        "footer";
+    grid-template-columns: 100%;
+}
+
+.sectionOfertas {
+    grid-area: sectionOfertas;
+}
+
+.sectionNovedades {
+    grid-area: sectionNovedades;
+}
+
+/* body */
+.div__imgOfertas img, .div__imgNovedades img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+    color: #221b11;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.divNovedades, .divOfertas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.divNovedades div, .divOfertas div {
+    background-color: #dcc4a3;
+    padding: 3%;
+    border-radius: 0.80rem;
+    box-shadow: 0px 3px 10px -4px #2f261a;
+    margin-bottom: 15%;
+}
+
+.divNovedades p, .divOfertas p {
+    font-family: 'Roboto', sans-serif;
+    color: #14100a;
+    margin-bottom: 2%;
+}
+
+.product__title {
+    font-weight: bolder;
+    font-size: 1.1em;
+    margin-bottom: 2%;
+}
+
+.button {
+    padding: 8px;
+    margin-top: 0.75rem;
+    background-color: #d95435;
+    border-color: #d95435;
+    border-radius: 0.188rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #14100a;
+}
+
+/* PRODUCTOS */
+#bodyProductos {
+    display: grid;
+    grid-template-areas: 
+                "navHeader"
+                "filtros"
+                "productos"
+                "footer";
+    grid-template-columns: 100%;
+}
+
+.filtros {
+    grid-area: filtros;
+}
+
+.productos {
+    grid-area: productos;
+}
+
+/* body */
+/* barra de filtros */
+.filtros {
+    background-color: #dcc4a3;
+    padding: 4% 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filtros select {
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.filtros input { 
+    padding: 0.30rem;
+    border-radius: 0.45rem;
+    border: none;
+}
+
+/* sección de productos */
+.fila {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.fila div {
+    background-color: #dcc4a3;
+    padding: 3%;
+    border-radius: 0.80rem;
+    box-shadow: 0px 3px 10px -4px #2f261a;
+    margin-bottom: 15%;
+    width: 17rem;
+}
+
+.fila p {
+    font-family: 'Roboto', sans-serif;
+    color: #14100a;
+    margin-bottom: 2%;
+}
+
+.fila img {
+    margin-bottom: 5%;
+}
+
+/* TIENDAS */
+#bodyTiendas {
+    grid-template-areas: 
+                "navHeader"
+                "buscarTiendas"
+                "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 6% 2fr auto;
+}
+
+.buscarTiendas {
+    grid-area: buscarTiendas;
+    display: grid;
+    justify-content: center;
+}
+
+.buscarTiendas label {
+    margin: 00.10rem 0.50rem 0.10rem 0.50rem;
+}
+
+.divMap {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 0.70rem 0.50rem 4rem 0.50rem;
+}
+
+/* SOBRE NOSOTROS */
+#bodyNostros {
+    display: grid;
+    grid-template-areas:
+                    "navHeader"
+                    "text"
+                    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 6% 2fr auto;
+}
+
+.text {
+    grid-area: text;
+    display: grid;
+    justify-content: center;
+}
+
+.text__h1 {
+    background-image: url(../images/Background.jpg);
+    white-space: nowrap;
+}
+
+.text__h1 h1 {
+    margin-top: 5rem;
+    font-size: 2.2em;
+}
+
+.text__p {
+    margin: 3rem 1rem 5rem 1rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* PERFIL */
+#bodyPerfil {
+    display: grid;
+    grid-template-areas:
+                    "navHeader"
+                    "usuario"
+                    "carrito"
+                    "info"
+                    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr 25% 1fr auto;
+}
+
+.usuario {
+    grid-area: usuario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrito {
+    grid-area: carrito;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2.8rem;
+}
+
+.info {
+    grid-area: info;
+}
+
+.usuarioDiv, .carritoDiv {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.usuarioDiv img, .carrito img {
+    size: 100px;
+}
+
+.usuarioDiv h1, .carrito h1 {
+    font-size: 1.2em;
+    margin: 0%;
+    margin-top: 2.1rem;
+    margin-left: 1rem;
+    color: #14100a;
+}
+
+.ingresar {
+    margin-right: 1rem;
+}
+
+.ingresar p {
+    color: #14100a;
+    margin-bottom: 0.20rem;
+}
+
+#password, #email {
+    margin-bottom: 0.60rem;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    border-radius: 0.188rem;
+    border-color: #fde8cb;
+}
+
+.carrito__productos p {
+    color: #14100a;
+    margin-bottom: 0.50rem;
+    padding: 0.20rem;
+    background-color: #6e4a1b3a;
+    border-radius: 0.188rem;
+    word-spacing: 2rem;
+    margin-left: 2rem;
+}
+
+.carrito__productos .button {
+    margin-left: 2rem;
+}
+
+.info {
+    border-width: 0px;
+    border-top-width: 1px;
+    border-style: solid;
+    border-color: #2f261a9d;
+    padding: 4rem 1rem;
+}
+
+.info div {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.info p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #14100a;
+    margin-left: 2%;
+}
+
+/* Media query */
+@media screen and (min-width: 769px) {
+    #navHeader {
+        flex-direction: row;
+        position: fixed;
+        box-shadow: 1px 1px 10px 3px #2f261a;
+    }
+    
+    #navHeader a {
+        margin: 1.3rem;
+        font-size: 1.15em;
+    }
+
+    .div__imgOfertas img {
+        margin-top: 4.5rem;
+    }
+    h1 {
+        font-size: 4.5em;
+    }
+
+    .divNovedades, .divOfertas {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .sobreNosotros {
+        display: inline;
+    }
+
+    .nosotros {
+        display: none;
+    }
+
+    .fila {
+        flex-direction: row;
+        justify-content: space-around;
+        height: fit-content;
+    }
+
+    #bodyProductos h1 {
+        margin-bottom: 13%;
+    }
+
+    .fila div {
+        height: 28rem;
+    }
+
+    .producto img {
+        margin-top: 5rem;
+    }
+
+    .filtros {
+       grid-row-start: 1;
+       margin-top: 3rem;
+       padding: 5% 3% 2% 3%;
+       flex-direction: row;
+       align-items: baseline;
+       justify-content: space-between;
+    }
+
+    .filtros select {
+        margin-left: 0.10rem;
+    }
+
+    .filtros p {
+        display: none;
+    }
+
+    .buscarTiendas h1 {
+        margin-top: 9rem;
+        white-space: nowrap;
+    }
+
+    .divMap {
+        position: static;
+        height: auto;
+        padding: 0%;
+    }
+
+    .text__h1 {
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .text__h1 h1 {
+        margin-top: 10rem;
+        font-size: 4em;
+    }
+
+    .text__p {
+        font-size: 1.5em;
+        margin: 4rem 3rem 6rem 3rem;
+        font-weight: bold;
+    }
+
+    #bodyPerfil {
+        display: grid;
+        grid-template-areas:
+                    "navHeader navHeader"
+                    "usuario carrito"
+                    "info info"
+                    "footer footer";
+        grid-template-columns: 50%;
+        grid-template-rows: 8% 45% 1fr 13%;
+    }
+}

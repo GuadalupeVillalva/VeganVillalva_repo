@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/iconlogo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title> Productos </title>
+</head>
+<body id="bodyProductos">
+    <nav id="navHeader">
+        <div>
+            <a href="../index.html"> <img src="../images/logo.png" alt="logo"> </a>
+        </div>
+        <div>
+            <ul>
+                <li> <a href="../index.html"> Inicio </a> </li>
+                <li> <a href="productos.html"> Productos </a> </li>
+                <li> <a href="tiendas.html"> Tiendas </a> </li>
+                <li> <a href="sobreNosotros.html" class="sobreNosotros"> Sobre Nosotros </a> </li>
+                <li> <a href="sobreNosotros.html" class="nosotros"> Nosotros </a> </li>
+                <li> <a href="perfil.html"> Perfil </a> </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="filtros">
+        <p> Ordenar por </p>
+        <div>
+            <form action="">
+                <label for="precio">
+                    <select name="precio" id="precio">
+                        <option value="masRelevante"> Más Relevante </option>
+                        <option value="mayorPrecio"> Mayor Precio </option>
+                        <option value="menorPrecio"> Menor Precio </option>
+                    </select>
+                </label>
+                <label for="marcas">
+                    <select  name="marcas" id="marcas" >
+                        <option hidden> Marcas </option>
+                        <option value="todas"> Todas </option>
+                        <option value="NotCo"> NotCo </option>
+                        <option value="Silk"> Silk </option>
+                        <option value="vegetalex"> Vegetalex </option>
+                    </select>
+                </label>
+                <label for="categorias">
+                    <select name="categorias" id="categorias">
+                        <option value="categorias" hidden> Categorías </option>
+                        <option value="congelados"> Congelados </option>
+                        <option value="vegetales"> Vegetales </option>
+                        <option value="lacteos"> Lácteos </option>
+                        <option value="untables"> Untables </option>
+                    </select>
+                </label>
+            </div>
+            <div class="searchBar">
+                <label for="search">
+                    <input type="search" id="search" placeholder="Buscar">
+                </label>
+            </div>    
+        </form>
+    </div>
+        
+    <div>
+        <h1> TODOS LOS PRODUCTOS </h1>
+        <div class="fila">
+            <div class="producto">
+                <img src="../images/iceCreamChocolate.png" alt="Helado de Chocolate">
+                <p class="product__title"> Helado </p>
+                <p> Sabor Chocolate 330gr </p>
+                <p> $550.00 </p>
+                <form action="">
+                    <label for="buy__product7">
+                        <input type="button" value="Agregar al carrito" class="button" id="buy__product7">
+                    </label> 
+                </form>
+            </div>
+            <div>
+                <img src="../images/mayonesa.png" alt="Mayonesa">
+                <p class="product__title"> Mayonesa </p>
+                <p> Hecha a base de plantas 325gr </p>
+                <p> $280.00 </p>
+                <form action="">
+                    <label for="buy__product8">
+                        <input type="button" value="Agregar al carrito" class="button" id="buy__product8">
+                    </label> 
+                </form>
+            </div>
+            <div>
+                <img src="../images/pastaMani.png" alt="Pasta de Maní">
+                <p class="product__title"> Pasta de Maní </p>
+                <p> Sin TACC, libre de gluten 485gr </p>
+                <p> $457.00 </p>
+                <form action="">
+                    <label for="buy__product9">
+                        <input type="button" value="Agregar al carrito" class="button" id="buy__product9">
+                </label> 
+                </form>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div>
+                <img src="../images/notMilk.png" alt="Leche">
+                <p class="product__title"> Leche NotCo </p>
+                <p> Leche vegetal sabor original 1L</p>
+                <p> $217.00 </p>
+                <form action="">
+                    <label for="buy__product10">
+                        <input type="button" value="Agregar al carrito" class="button" id="buy__product10">
+                    </label> 
+                </form>
+            </div>
+            <div>
+                <img src="../images/notMilkChocolate.png" alt="Leche Chocolate">
+                <p class="product__title"> Leche NotCo </p>
+                <p> Leche vegetal sabor chocolate 1L </p>
+                <p> $230,00 </p>
+                <form action="">
+                    <label for="buy__product11">
+                        <input type="button" value="Agregar al carrito" class="button" id="buy__product11">
+                    </label> 
+                </form>
+            </div>
+            <div class="producto">
+                <img src="../images/yogurt.png" alt="Yogurt">
+                <p class="product__title"> Yogurt </p>
+                <p> Sabor Mango 1kg </p>
+                <p> $807.00 </p>
+                <form action="">
+                    <label for="buy__product12">
+                        <input type="button" value="Agregar al carrito" class="button" id="buy__product12">
+                    </label> 
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <a href="https://www.instagram.com" target="_blank" class="icon"> <img src="../icons/instagram.png" alt="instagram"> </a>
+            <a href="https://whatsapp.com/" target="_blank" class="icon"> <img src="../icons/whatsapp.png" alt="whatsapp"> </a>
+            <a href="https://outlook.live.com" target="_blank" class="icon""> <img src="../icons/email.png" alt="email"> </a>
+            <p> Contáctanos </p>
+        </div>
+    </footer>
+</body>
+</html>

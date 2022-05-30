@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/iconlogo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title> Perfil </title>
+</head>
+<body id="bodyPerfil">
+    <nav id="navHeader">
+        <div>
+            <a href="../index.html"> <img src="../images/logo.png" alt="logo"> </a>
+        </div>
+        <div>
+            <ul>
+                <li> <a href="../index.html"> Inicio </a> </li>
+                <li> <a href="productos.html"> Productos </a> </li>
+                <li> <a href="tiendas.html"> Tiendas </a> </li>
+                <li> <a href="sobreNosotros.html" class="sobreNosotros"> Sobre Nosotros </a> </li>
+                <li> <a href="sobreNosotros.html" class="nosotros"> Nosotros </a> </li>
+                <li> <a href="perfil.html"> Perfil </a> </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="usuario">
+        <div class="usuarioDiv">
+            <img src="../icons/user.png" alt="usuario">
+            <h1> Inicia Sesión </h1>
+        </div>
+        <div class="ingresar">
+            <form action="">
+                <p> Correo electrónico </p> 
+                <label for="email">
+                    <input type="email" name="correo" id="email" required>
+                </label>
+                <p> Contraseña </p>
+                <label for="password">
+                    <input type="password" name="contraseña" id="password" required>
+                </label>
+                <div>
+                    <label for="send">
+                        <input type="submit" value="Iniciar Sesión" class="button">
+                    </label>
+                </div>    
+            </form>
+        </div>
+    </div>
+    <div class="carrito">
+        <div class="carritoDiv"> 
+            <img src="../icons/shopping-cart.png" alt="carrito">
+            <h1> Carrito </h1>
+        </div>
+        <div class="carrito__productos">
+            <p> Producto1 + x $200 </p>
+            <p> Producto2 + x $450 </p>
+            <p> Producto3 + x $870 </p>
+            <p> Total. . . .   $1520 </p>
+            <form action="">
+                <label for="comprar">
+                    <input type="button" value="Comprar carrito" id="comprar" class="button">
+                </label>
+            </form>
+        </div>
+    </div>
+    <div class="info">
+        <div>
+            <img src="../icons/1.png" alt="uno">
+            <p> Elige los productos que quieras comprar. </p>
+        </div>
+        <div>
+            <img src="../icons/2.png" alt="dos">
+            <p> Elige el medio de envío. </p>
+        </div>
+        <div>
+            <img src="../icons/3.png" alt="tres">
+            <p> Elige el método de pago que desees. </p>
+        </div>
+        <div>
+            <img src="../icons/4.png" alt="cuatro">
+            <p> Confirma tu pedido. </p>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <a href="https://www.instagram.com" target="_blank" class="icon"> <img src="../icons/instagram.png" alt="instagram"> </a>
+            <a href="https://whatsapp.com/" target="_blank" class="icon"> <img src="../icons/whatsapp.png" alt="whatsapp"> </a>
+            <a href="https://outlook.live.com" target="_blank" class="icon""> <img src="../icons/email.png" alt="email"> </a>
+            <p> Contáctanos </p>
+        </div>
+    </footer>
+</body>
+</html>
