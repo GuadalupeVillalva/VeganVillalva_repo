@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color:#fde8cb;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);    
     font-family: 'Lato', sans-serif;
 }
 
@@ -20,6 +20,7 @@ body {
     width: 100%;
     padding: 0.938rem 2rem;
     grid-area: navHeader;
+    z-index: 999;
 }
 
 .sobreNosotros {
@@ -115,6 +116,14 @@ h1 {
     margin-bottom: 15%;
 }
 
+.divNovedades img, .divOfertas img, .fila img {
+    transition: all 0.2s ease-in-out;
+}
+
+.divNovedades img:hover, .divOfertas img:hover, .fila img:hover {
+    transform: scale(1.1);
+}
+
 .divNovedades p, .divOfertas p {
     font-family: 'Roboto', sans-serif;
     color: #14100a;
@@ -136,7 +145,14 @@ h1 {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     color: #14100a;
+    transition: all 0.2s ease-in-out;
 }
+
+.button:hover {
+    box-shadow: 1px 1px #7c301f, 2px 2px #7c301f, 3px 3px #7c301f;
+    transform: translateX(-3px)
+}
+
 
 /* PRODUCTOS */
 #bodyProductos {
@@ -212,7 +228,6 @@ h1 {
                 "buscarTiendas"
                 "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 6% 2fr auto;
 }
 
 .buscarTiendas {
@@ -234,14 +249,14 @@ h1 {
 }
 
 /* SOBRE NOSOTROS */
-#bodyNostros {
+#bodyNosotros {
     display: grid;
     grid-template-areas:
                     "navHeader"
                     "text"
                     "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 6% 2fr auto;
+    grid-template-rows: repeat( 3, auto);
 }
 
 .text {
@@ -251,15 +266,37 @@ h1 {
 }
 
 .text__h1 {
-    background-image: url(../images/Background.jpg);
-    white-space: nowrap;
+    white-space: nowrap;  
+    background-image: url(../images/background-mobile.jpg);
+    background-size: cover;
 }
 
-.text__h1 h1 {
-    margin-top: 5rem;
+.fade-in {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    margin-bottom: 0%;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
     font-size: 2.2em;
 }
 
+@-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+ 
 .text__p {
     margin: 3rem 1rem 5rem 1rem;
     text-align: center;
@@ -276,7 +313,7 @@ h1 {
                     "info"
                     "footer";
     grid-template-columns: 100%;
-    grid-template-rows: auto 1fr 25% 1fr auto;
+    grid-template-rows: repeat( 4, auto);
 }
 
 .usuario {
@@ -285,6 +322,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .carrito {
@@ -294,6 +332,7 @@ h1 {
     align-items: center;
     justify-content: center;
     margin-right: 2.8rem;
+    margin: 3rem 2.8rem 4rem;
 }
 
 .info {
@@ -348,11 +387,7 @@ h1 {
 }
 
 .info {
-    border-width: 0px;
-    border-top-width: 1px;
-    border-style: solid;
-    border-color: #2f261a9d;
-    padding: 4rem 1rem;
+    margin: 4rem 1rem;
 }
 
 .info div {
@@ -384,6 +419,7 @@ h1 {
     .div__imgOfertas img {
         margin-top: 4.5rem;
     }
+    
     h1 {
         font-size: 4.5em;
     }
@@ -448,11 +484,11 @@ h1 {
     }
 
     .text__h1 {
-        background-size: cover;
-        background-attachment: fixed;
+        background-image: url(../images/Background.jpg);
+        background-size: cover; 
     }
 
-    .text__h1 h1 {
+    .fade-in {
         margin-top: 10rem;
         font-size: 4em;
     }
@@ -470,7 +506,15 @@ h1 {
                     "usuario carrito"
                     "info info"
                     "footer footer";
-        grid-template-columns: 50%;
-        grid-template-rows: 8% 45% 1fr 13%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat( 4, auto);
+    }
+
+    .usuario {
+        margin-top: 6rem;
+    }
+
+    .carrito {
+        margin-top: 10rem;
     }
 }
