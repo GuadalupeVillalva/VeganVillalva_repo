@@ -7,39 +7,21 @@
 }
 
 body {
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);    
+    background-color:  #F9EBC8;    
     font-family: 'Lato', sans-serif;
 }
 
 /* Header */
 #navHeader {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background-color: #90a82e;
     width: 100%;
-    padding: 0.938rem 2rem;
     grid-area: navHeader;
     z-index: 999;
-}
-
-.sobreNosotros {
-    display: none;
-}
-
-#navHeader div {
-    align-self: center;
-}
-
-#navHeader ul {
-    display: flex;
-    margin-top: 0.50rem;
 }
 
 #navHeader a {
     color: #2f261a;
     font-weight: bold;
-    margin: 0.23rem;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -136,23 +118,13 @@ h1 {
     margin-bottom: 2%;
 }
 
-.button {
-    padding: 8px;
-    margin-top: 0.75rem;
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:focus, .btn-primary:active:focus {
     background-color: #d95435;
     border-color: #d95435;
-    border-radius: 0.188rem;
     font-family: 'Lato', sans-serif;
-    font-weight: bold;
     color: #14100a;
-    transition: all 0.2s ease-in-out;
+    font-weight: 900;
 }
-
-.button:hover {
-    box-shadow: 1px 1px #7c301f, 2px 2px #7c301f, 3px 3px #7c301f;
-    transform: translateX(-3px)
-}
-
 
 /* PRODUCTOS */
 #bodyProductos {
@@ -183,15 +155,20 @@ h1 {
     align-items: center;
 }
 
-.filtros select {
-    margin-top: 2%;
-    margin-bottom: 3%;
+.filtros-dropdown form {
+    display: flex;
+    align-self: center;
+    margin-bottom: 2%;
 }
 
-.filtros input { 
-    padding: 0.30rem;
-    border-radius: 0.45rem;
+.btn-group {
+    margin-left: 0.50rem;
+} 
+
+.btn-group button, .btn-group button:hover, .btn-group button:active, .btn-group button:focus, .btn-group button:active:focus {
+    background-color: white;
     border: none;
+    color: #14100a;
 }
 
 /* sección de productos */
@@ -322,7 +299,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    padding-top: 4.3rem;
 }
 
 .carrito {
@@ -332,7 +309,7 @@ h1 {
     align-items: center;
     justify-content: center;
     margin-right: 2.8rem;
-    margin: 3rem 2.8rem 4rem;
+    margin-top: 3rem;
 }
 
 .info {

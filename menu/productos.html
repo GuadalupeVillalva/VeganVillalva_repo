@@ -8,59 +8,78 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../images/iconlogo.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/style.css">
     <title> Productos </title>
 </head>
 <body id="bodyProductos">
-    <nav id="navHeader">
-        <div>
-            <a href="../index.html"> <img src="../images/logo.png" alt="logo"> </a>
-        </div>
-        <div>
-            <ul>
-                <li> <a href="../index.html"> Inicio </a> </li>
-                <li> <a href="productos.html"> Productos </a> </li>
-                <li> <a href="tiendas.html"> Tiendas </a> </li>
-                <li> <a href="sobreNosotros.html" class="sobreNosotros"> Sobre Nosotros </a> </li>
-                <li> <a href="sobreNosotros.html" class="nosotros"> Nosotros </a> </li>
-                <li> <a href="perfil.html"> Perfil </a> </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg p-0" id="navHeader">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"> <img src="../images/logo.png" alt="logo"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html"> Inicio </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html"> Productos </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tiendas.html"> Tiendas </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobreNosotros.html"> Sobre Nosotros </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil.html"> Perfil </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <div class="filtros">
         <p> Ordenar por </p>
-        <div>
+        <div class="filtros-dropdown">
             <form action="">
                 <label for="precio">
-                    <select name="precio" id="precio">
-                        <option value="masRelevante"> Más Relevante </option>
-                        <option value="mayorPrecio"> Mayor Precio </option>
-                        <option value="menorPrecio"> Menor Precio </option>
-                    </select>
+                    <div class="btn-group">
+                        <button id="precio" class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Más relevante </button>
+                        <ul class="dropdown-menu">
+                          <li class="dropdown-item"> Mayor precio </li>
+                          <li class="dropdown-item"> Menor precio </li>
+                        </ul>
+                      </div>
                 </label>
                 <label for="marcas">
-                    <select  name="marcas" id="marcas" >
-                        <option hidden> Marcas </option>
-                        <option value="todas"> Todas </option>
-                        <option value="NotCo"> NotCo </option>
-                        <option value="Silk"> Silk </option>
-                        <option value="vegetalex"> Vegetalex </option>
-                    </select>
+                    <div class="btn-group">
+                        <button id="marcas" class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Marcas </button>
+                        <ul class="dropdown-menu">
+                          <li class="dropdown-item"> Todas </li>
+                          <li class="dropdown-item"> NotCo </li>
+                          <li class="dropdown-item"> Silk</li>
+                          <li class="dropdown-item"> Vegetalex </li>
+                        </ul>
+                      </div>
                 </label>
                 <label for="categorias">
-                    <select name="categorias" id="categorias">
-                        <option value="categorias" hidden> Categorías </option>
-                        <option value="congelados"> Congelados </option>
-                        <option value="vegetales"> Vegetales </option>
-                        <option value="lacteos"> Lácteos </option>
-                        <option value="untables"> Untables </option>
-                    </select>
+                    <div class="btn-group">
+                        <button id="categorias" class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Categorías </button>
+                        <ul class="dropdown-menu">
+                          <li class="dropdown-item"> Congelados </li>
+                          <li class="dropdown-item"> Vegetales </li>
+                          <li class="dropdown-item"> Lacteos </li>
+                          <li class="dropdown-item"> Untables </li>
+                        </ul>
+                      </div>
                 </label>
             </div>
             <div class="searchBar">
-                <label for="search">
-                    <input type="search" id="search" placeholder="Buscar">
-                </label>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  </form>
             </div>    
         </form>
     </div>
@@ -75,7 +94,7 @@
                 <p> $550.00 </p>
                 <form action="">
                     <label for="buy__product7">
-                        <input type="button" value="Agregar al carrito" class="button" id="buy__product7">
+                        <button type="button" class="btn btn-primary button" id="buy__product7"> Agregar al carrito </button>
                     </label> 
                 </form>
             </div>
@@ -86,7 +105,7 @@
                 <p> $280.00 </p>
                 <form action="">
                     <label for="buy__product8">
-                        <input type="button" value="Agregar al carrito" class="button" id="buy__product8">
+                        <button type="button" class="btn btn-primary button" id="buy__product8"> Agregar al carrito </button>
                     </label> 
                 </form>
             </div>
@@ -97,7 +116,7 @@
                 <p> $457.00 </p>
                 <form action="">
                     <label for="buy__product9">
-                        <input type="button" value="Agregar al carrito" class="button" id="buy__product9">
+                        <button type="button" class="btn btn-primary button" id="buy__product9"> Agregar al carrito </button>
                 </label> 
                 </form>
             </div>
@@ -111,7 +130,7 @@
                 <p> $217.00 </p>
                 <form action="">
                     <label for="buy__product10">
-                        <input type="button" value="Agregar al carrito" class="button" id="buy__product10">
+                        <button type="button" class="btn btn-primary button" id="buy__product10"> Agregar al carrito </button>
                     </label> 
                 </form>
             </div>
@@ -122,7 +141,7 @@
                 <p> $230,00 </p>
                 <form action="">
                     <label for="buy__product11">
-                        <input type="button" value="Agregar al carrito" class="button" id="buy__product11">
+                        <button type="button" class="btn btn-primary button" id="buy__product11"> Agregar al carrito </button>
                     </label> 
                 </form>
             </div>
@@ -133,7 +152,7 @@
                 <p> $807.00 </p>
                 <form action="">
                     <label for="buy__product12">
-                        <input type="button" value="Agregar al carrito" class="button" id="buy__product12">
+                        <button type="button" class="btn btn-primary button" id="buy__product12"> Agregar al carrito </button>
                     </label> 
                 </form>
             </div>
@@ -147,5 +166,6 @@
             <p> Contáctanos </p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
