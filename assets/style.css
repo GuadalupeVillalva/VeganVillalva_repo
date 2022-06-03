@@ -118,13 +118,29 @@ h1 {
     margin-bottom: 2%;
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:focus, .btn-primary:active:focus {
+.btn-primary, .btn-primary:active, .btn-primary:visited {
     background-color: #d95435;
     border-color: #d95435;
     font-family: 'Lato', sans-serif;
     color: #14100a;
     font-weight: 900;
+    transition: all 0.2s ease-in-out;
 }
+.btn-primary:focus, .btn-primary:active:focus {
+    background-color: #da411f;
+    border-color: #86311d;
+    color: #14100a;
+    box-shadow: none;
+}
+
+.btn-primary:hover {
+    box-shadow: 1px 1px #86311d, 2px 2px #86311d, 3px 3px #86311d;
+    transform: translateX(-3px);
+    background-color: #d95435;
+    border-color: #86311d;
+    color: #14100a;
+}
+
 
 /* PRODUCTOS */
 #bodyProductos {
