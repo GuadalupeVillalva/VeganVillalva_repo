@@ -422,6 +422,14 @@ h1 {
         justify-content: space-around;
     }
 
+    .divNovedades div, .divOfertas div {
+        height: 29rem;
+    }
+
+    .img {
+        margin-top: 1rem;
+    }
+
     .sobreNosotros {
         display: inline;
     }
