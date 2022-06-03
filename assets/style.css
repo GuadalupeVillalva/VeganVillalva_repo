@@ -450,8 +450,8 @@ h1 {
 
     .filtros {
        grid-row-start: 1;
-       margin-top: 3rem;
-       padding: 5% 3% 2% 3%;
+       margin-top: 2.7rem;
+       padding: 7% 3% 2% 3%;
        flex-direction: row;
        align-items: baseline;
        justify-content: space-between;
