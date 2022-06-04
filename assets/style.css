@@ -430,13 +430,11 @@ h1 {
         margin-top: 1rem;
     }
 
-    .sobreNosotros {
-        display: inline;
+    .width {
+        padding-left: 0% !important;
+        padding-right: 0% !important;
     }
 
-    .nosotros {
-        display: none;
-    }
 
     .fila {
         flex-direction: row;
@@ -518,4 +516,5 @@ h1 {
     .carrito {
         margin-top: 10rem;
     }
+
 }
