@@ -13,7 +13,7 @@
     <title> Vegan </title>
 </head>
 <body id="bodyIndex">
-    <nav class="navbar navbar-expand-lg p-0" id="navHeader">
+    <nav class="navbar navbar-expand-lg fixed-top shadow-lg" id="navHeader">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"> <img src="./images/logo.png" alt="logo"> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,15 +40,16 @@
             </div>
         </div>
     </nav>
-    <!-- Sección de Ofertas -->
-    <section class="sectionOfertas">
-        <div class="div__imgOfertas">
-            <img src="./images/notCo.jpg" alt="NotCo">
-        </div>
-        <h1> OFERTAS </h1>
-        <div class="divOfertas">
-            <div>
-                <img src="./images/soyMilk.png" alt="Leche de Soja" class="img">
+    <!-- Sección de Ofertas -->   
+
+    <section class="sectionOfertas container-fluid">
+        <div class="div__imgOfertas row col-sm-3 mt-5">
+            <img src="./images/notCo.jpg" alt="NotCo" class="p-0 img-fluid">
+        </div>    
+        <h1 class="mt-5 mb-5"> OFERTAS </h1>
+        <div class="div-productos">
+            <div class="row col-sm-3 m-3 p-0 pb-3 d-flex justify-content-center text-center rounded-4">
+                <img src="./images/soyMilk.png" alt="Leche de Soja">
                 <p class="product__title"> Leche de Soja </p>
                 <p> Sin Azúcar 946ml </p>
                 <p> $317,00 </p>
@@ -58,7 +59,7 @@
                     </label>    
                 </form>
             </div>
-            <div>
+            <div class="row col-sm-3 m-3 p-0 pb-3 d-flex justify-content-center text-center rounded-4">
                 <img src="./images/iceCream.png" alt="Helado">
                 <p class="product__title"> Helado </p>
                 <p> Cheesecake de Frambuesa 298gr </p>
@@ -69,8 +70,8 @@
                     </label> 
                 </form>
             </div>
-            <div class="width">
-                <img src="./images/burger.png" alt="Hamburguesa" class="img">
+            <div class="row col-sm-3 m-3 p-0 pb-3 d-flex justify-content-center text-center rounded-4">
+                <img src="./images/burger.png" alt="Hamburguesa">
                 <p class="product__title"> Hamburguesa </p>
                 <p> 2 unidades x 80gr</p>
                 <p> $460,00 </p>
@@ -83,14 +84,15 @@
         </div>
     </section>
     <!-- Sección de Novedades -->
-    <section class="sectionNovedades">
-        <div class="div__imgNovedades">
-            <img src="./images/novedades.jpg" alt="Novedades">
-        </div>
-        <h1> NOVEDADES </h1>
-        <div class="divNovedades">      
-            <div>
-                <img src="./images/chocolate.png" alt="Chocolate" class="img">
+
+    <section class="sectionNovedades container-fluid mb-5">
+    <div class="div__imgNovedades row col-sm-3 mt-5">
+        <img src="./images/novedades.jpg" alt="Novedades" class="p-0 img-fluid">
+    </div>
+        <h1  class="mt-5 mb-5"> NOVEDADES </h1>
+        <div class="div-productos">      
+            <div class="row col-md-3 m-3 p-0 pb-3 d-flex justify-content-center text-center rounded-4">
+                <img src="./images/chocolate.png" alt="Chocolate">
                 <p class="product__title"> Chocolate </p>
                 <p> Libre de Gluten </p>
                 <p> $450,00 </p>
@@ -100,7 +102,7 @@
                     </label> 
                 </form>
             </div>
-            <div>
+            <div  class="row col-md-3 m-3 p-0 pb-3 d-flex justify-content-center text-center rounded-4">
                 <img src="./images/dulce.png" alt="Dulce de Leche">
                 <p class="product__title"> Dulce de Leche </p>
                 <p> A base de leche de coco 400gr </p>
@@ -111,7 +113,7 @@
                     </label> 
                 </form>
             </div>
-            <div class="width">
+            <div class="row col-md-3 m-3 p-0 pb-3 d-flex justify-content-center text-center rounded-4">
                 <img src="./images/nuggets.png" alt="Nuggets">
                 <p class="product__title"> Nuggets </p>
                 <p> A base de vegetales sabor pollo 400g </p>

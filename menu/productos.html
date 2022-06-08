@@ -13,7 +13,7 @@
     <title> Productos </title>
 </head>
 <body id="bodyProductos">
-    <nav class="navbar navbar-expand-lg p-0" id="navHeader">
+    <nav class="navbar navbar-expand-lg fixed-top shadow-lg p-0" id="navHeader">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html"> <img src="../images/logo.png" alt="logo"> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
             </div>
         </div>
     </nav>
-    <div class="filtros">
+    <div class="filtros mt-5">
         <p> Ordenar por </p>
         <div class="filtros-dropdown">
             <form action="">
@@ -70,7 +70,7 @@
                         <ul class="dropdown-menu">
                           <li class="dropdown-item"> Congelados </li>
                           <li class="dropdown-item"> Vegetales </li>
-                          <li class="dropdown-item"> Lacteos </li>
+                          <li class="dropdown-item"> Lácteos </li>
                           <li class="dropdown-item"> Untables </li>
                         </ul>
                       </div>
@@ -85,9 +85,9 @@
     </div>
         
     <div>
-        <h1> TODOS LOS PRODUCTOS </h1>
-        <div class="fila">
-            <div class="producto">
+        <h1 class="mt-5 pt-5 mb-5"> TODOS LOS PRODUCTOS </h1>
+        <div class="container-fluid div-productos">
+            <div class="row col-sm-3 m-4 p-0 pb-3 pt-1 d-flex justify-content-center text-center rounded-4">
                 <img src="../images/iceCreamChocolate.png" alt="Helado de Chocolate" class="imgIceCream">
                 <p class="product__title"> Helado </p>
                 <p> Sabor Chocolate 330gr </p>
@@ -98,10 +98,10 @@
                     </label> 
                 </form>
             </div>
-            <div>
+            <div class="row col-sm-4 m-3 p-0 pb-3 pt-1 d-flex justify-content-center text-center rounded-4">
                 <img src="../images/mayonesa.png" alt="Mayonesa">
                 <p class="product__title"> Mayonesa </p>
-                <p> Hecha a base de plantas 325gr </p>
+                <p> A base de plantas 325gr </p>
                 <p> $280.00 </p>
                 <form action="">
                     <label for="buy__product8">
@@ -109,7 +109,7 @@
                     </label> 
                 </form>
             </div>
-            <div>
+            <div class="row col-sm-4 m-3 p-0 pb-3 pt-1 d-flex justify-content-center text-center rounded-4">
                 <img src="../images/pastaMani.png" alt="Pasta de Maní" class="img">
                 <p class="product__title"> Pasta de Maní </p>
                 <p> Sin TACC, libre de gluten 485gr </p>
@@ -122,8 +122,8 @@
             </div>
         </div>
 
-        <div class="fila">
-            <div>
+        <div class="container-fluid mb-5 div-productos">
+            <div class="row col-md-4 m-3 p-0 pb-3 pt-1 d-flex justify-content-center text-center rounded-4">
                 <img src="../images/notMilk.png" alt="Leche">
                 <p class="product__title"> Leche NotCo </p>
                 <p> Leche vegetal sabor original 1L</p>
@@ -134,7 +134,7 @@
                     </label> 
                 </form>
             </div>
-            <div>
+            <div class="row col-md-4 m-3 p-0 pb-3 pt-1 d-flex justify-content-center text-center rounded-4">
                 <img src="../images/notMilkChocolate.png" alt="Leche Chocolate">
                 <p class="product__title"> Leche NotCo </p>
                 <p> Leche vegetal sabor chocolate 1L </p>
@@ -145,7 +145,7 @@
                     </label> 
                 </form>
             </div>
-            <div class="producto">
+            <div class="row col-md-4 m-3 p-0 pb-3 pt-1 d-flex justify-content-center text-center rounded-4">
                 <img src="../images/yogurt.png" alt="Yogurt" class="img">
                 <p class="product__title"> Yogurt </p>
                 <p> Sabor Mango 1kg </p>
