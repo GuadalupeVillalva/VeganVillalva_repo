@@ -1,0 +1,181 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+  body {
+    background-color:  #F9EBC8;    
+    font-family: 'Lato', sans-serif;
+  }
+  /* HEADER */
+  #navHeader {
+    background-color: #90a82e;
+    width: 100%;
+    grid-area: navHeader;
+  }
+  #navHeader a {
+    color: #2f261a;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  #navHeader a:hover {
+    color: black;
+  }
+  .navbar-collapse {
+    background-color: #90a82e !important;
+  }
+  /* HEADER */
+  /* INDEX*/
+  .div__imgOfertas img, .div__imgNovedades img {
+    width: 100%;
+    height: auto;
+  }
+  .container-fluid img {
+    width: auto;
+    height: auto;
+    transition: all 0.2s ease-in-out;
+  }
+  h1 {
+    color: #221b11;
+    font-size: 2.5em;
+    text-align: center;
+  }
+  .div-productos div {
+    background-color: #dcc4a3;
+  }
+  
+  .div-productos img:hover {
+    transform: scale(1.1);
+  }
+  .container-fluid p  {
+    font-family: 'Roboto', sans-serif;
+    color: #14100a;
+    margin-bottom: 3%;
+  }
+  .product__title {
+    font-weight: bolder;
+    font-size: 1.1em;
+    margin-bottom: 2%;
+  }
+  .btn-primary, .btn-primary:active, .btn-primary:visited {
+    background-color: #d95435;
+    border-color: #d95435;
+    font-family: 'Lato', sans-serif;
+    color: #14100a;
+    font-weight: 900;
+    transition: all 0.2s ease-in-out;
+  }
+  .btn-primary:focus, .btn-primary:active:focus {
+    background-color: #da411f;
+    border-color: #86311d;
+    color: #14100a;
+    box-shadow: none;
+  }
+  .btn-primary:hover {
+    box-shadow: 1px 1px #86311d, 2px 2px #86311d, 3px 3px #86311d;
+    transform: translateX(-3px);
+    background-color: #d95435;
+    border-color: #86311d;
+    color: #14100a;
+  }
+  /* INDEX */
+  /* PRODUCTOS */
+  /* barra de filtros */
+  .filtros {
+    background-color: #dcc4a3;
+    padding: 4% 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .filtros-dropdown form {
+    display: flex;
+    align-self: center;
+    margin-bottom: 2%;
+  }
+  .btn-group {
+    margin-left: 0.50rem;
+  } 
+  .btn-group button, .btn-group button:hover, .btn-group button:active, .btn-group button:focus, .btn-group button:active:focus {
+    background-color: white;
+    border: none;
+    color: #14100a;
+  }
+  /* PRODUCTOS */
+  /* TIENDAS */
+  #bodyTiendas {
+    grid-template-areas: 
+                "navHeader"
+                "buscarTiendas"
+                "footer";
+    grid-template-columns: 100%;
+  }
+  .buscarTiendas {
+    grid-area: buscarTiendas;
+    display: grid;
+    justify-content: center;
+  }
+  .buscarTiendas label {
+    margin: 00.10rem 0.50rem;
+  }
+  .divMap {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 0.70rem 0.50rem 4rem 0.50rem;
+  }
+  /* SOBRE NOSOTROS */
+  #bodyNosotros {
+    display: grid;
+    grid-template-areas:
+                    "navHeader"
+                    "text"
+                    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat( 3, auto);
+  }
+  .text {
+    grid-area: text;
+    display: grid;
+    justify-content: center;
+  }
+  .text__h1 {
+    white-space: nowrap;  
+    background-image: url(../images/background-mobile.jpg);
+    background-size: cover;
+  }
+  .fade-in {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    margin-bottom: 0%;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    font-size: 2.2em;
+  }
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .text__p {
+    margin: 3rem 1rem 5rem 1rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }

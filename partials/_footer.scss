@@ -1,0 +1,16 @@
+footer { 
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    background-color: $verde;
+    padding: 2rem;
+        .icon {
+            margin: 0.80rem;
+            text-decoration: none;
+        }
+        p {
+            text-align: center;
+            padding-top: 0.80rem;
+            color: #000000ce;
+        }
+}
