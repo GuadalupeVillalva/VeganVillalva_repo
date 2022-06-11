@@ -171,7 +171,7 @@ h1 {
   margin: 3rem 1rem 5rem 1rem;
   text-align: center;
   font-family: 'Roboto', sans-serif; }
-/* PERFIL */
+
 #bodyPerfil {
   display: grid;
   grid-template-areas: "navHeader"
@@ -247,20 +247,20 @@ h1 {
     color: #14100a;
     margin-left: 2%; }
 
-footer {
+#footerPerfil {
   grid-area: footer;
   display: flex;
   justify-content: center;
   background-color: #90a82e;
   padding: 2rem; }
-  footer .icon {
+  #footerPerfil .icon {
     margin: 0.80rem;
     text-decoration: none; }
-  footer p {
+  #footerPerfil p {
     text-align: center;
     padding-top: 0.80rem;
     color: #000000ce; }
-/* PERFIL */
+
 /* Media query */
 @media screen and (min-width: 576px) {
   .container-fluid {
