@@ -1,0 +1,30 @@
+.btn-primary {
+    background-color: $btnColor;
+    border-color: $btnBorderColor;
+    font-family: 'Lato', sans-serif;
+    color: $colorFuente;
+    font-weight: 900;
+    transition: all 0.2s ease-in-out;
+        &:active {
+            @extend .btn-primary;
+        }
+        &:visited {
+            @extend .btn-primary;
+        }
+        &:focus {
+            background-color: $btnColor;
+            border-color: $btnBorderColor;
+            color: $colorFuente;
+            box-shadow: none;
+        }
+        &:active:focus {
+            @extend .btn-primary:focus
+        }
+        &:hover {
+            box-shadow: 1px 1px $btnBorderColor, 2px 2px $btnBorderColor, 3px 3px $btnBorderColor;
+            transform: translateX(-3px);
+            background-color: #d95435;
+            border-color: $btnBorderColor;
+            color: $colorFuente;
+        }
+}

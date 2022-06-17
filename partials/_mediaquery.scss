@@ -1,91 +1,52 @@
-/* Media query */
+
 @media screen and (min-width: 576px) {
-
-    .container-fluid {
-        padding: 0%;
+    .seccion {
+        h1 {
+            font-size: $fontSizeDesktop;
+        }
     }
 
-    .div__imgOfertas, .div__imgNovedades {
-        margin: 0% !important;
-        width: fit-content;
-        margin-top: 3.3rem !important;
-    }
 
     .div-productos {
-        display: flex;
-        justify-content: space-around;
-    }
+        div {
+            width: max-content;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            padding: 2rem;
+            align-self: center; 
+            height: 23.9rem;
+            padding-top: 1rem;
 
-    .div-productos div {
-        width: 27%;
-    }
-
-    h1 {
-        font-size: 4.5em;
-    }
-
-    .filtros {
-       grid-row-start: 1;
-       padding: 3.5% 3% 2% 3%;
-       flex-direction: row;
-       align-items: baseline;
-       justify-content: space-between;
-    }
-
-    .filtros select {
-        margin-left: 0.10rem;
-    }
-
-    .filtros p {
-        display: none;
-    }
-
-    .buscarTiendas h1 {
-        margin-top: 9rem;
-        white-space: nowrap;
-    }
-
-    .divMap {
-        position: static;
-        height: auto;
-        padding: 0%;
-    }
-
-    .text__h1 {
-        background-image: url(../images/Background.jpg);
-        background-size: cover; 
-    }
-
-    .fade-in {
-        margin-top: 10rem;
-        font-size: 4em;
-    }
-
-    .text__p {
-        font-size: 1.5em;
-        margin: 4rem 3rem 6rem 3rem;
-        font-weight: bold;
-    }
-
+        }
+        @include flex-space-around;
+        img {
+            height: 140px;
+            margin-bottom: 0.50rem;
+            }
+        p {
+            width: auto;
+            text-align: center;
+        }
+        }
+    
     #bodyPerfil {
         display: grid;
         grid-template-areas:
-                    "navHeader navHeader"
-                    "usuario carrito"
-                    "info info"
-                    "footer footer";
+                        "navHeader navHeader"
+                        "usuario carrito"
+                        "info info"
+                        "footer footer";
         grid-template-columns: 50% 50%;
         grid-template-rows: repeat( 4, auto);
-    }
-
-    .usuario {
-        margin-top: 6rem;
-        grid-row-start: 1;
-    }
-
-    .carrito {
-        margin-top: 10rem;
-        grid-row-start: 1;
-    }
-
+        .usuario {
+            grid-row-start: 1;
+        }
+        .carrito {
+            grid-row-start: 1;
+            padding-top: 4rem;
+        }
+        .info {
+            grid-row-start: 3;
+        }
+        }
 }

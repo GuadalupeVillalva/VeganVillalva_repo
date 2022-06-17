@@ -1,0 +1,20 @@
+
+#navHeader {
+    background-color: $colorNavFooter;
+    width: 100%;
+    grid-area: navHeader;
+        a {
+            color: $colorFuente;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+                &:hover {
+                    color: black;
+                }
+        }
+}
+
+.navbar-collapse {
+    background-color: #90a82e !important;
+}

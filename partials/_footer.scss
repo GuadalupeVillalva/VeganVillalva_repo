@@ -1,8 +1,37 @@
+$contacto: (
+    whatsapp: #adff2f,
+    email: #808080,
+    instagram: #d87093,
+);
+
+@mixin flex-space-around{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.botones {
+    @include flex-space-around;
+    @each $name, $color in $contacto {
+        .botones--#{$name}{
+        background-color: $color;
+        }
+    }
+    div {
+        padding: 0.50rem;
+        margin-bottom: 3rem;
+        border-radius: 30px;
+    }
+    a {
+        color: $colorFuente;
+        text-decoration: none;
+    }
+}
 #footerPerfil { 
     grid-area: footer;
     display: flex;
     justify-content: center;
-    background-color: $verde;
+    background-color: $colorNavFooter;
     padding: 2rem;
         .icon {
             margin: 0.80rem;

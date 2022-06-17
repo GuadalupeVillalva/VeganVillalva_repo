@@ -1,0 +1,48 @@
+.div__img-ofertas {
+    img {
+        width: 100%;
+        height: auto;
+        margin-top: 4.3rem;
+        margin-bottom: 3rem;
+        }
+}
+
+.div__img-novedades {
+    @extend .div__img-ofertas;
+    img {
+        margin-top: 3rem;
+    }
+}
+
+.seccion {
+    h1 {
+        font-size: $fontSizeMobile;
+        color: $colorFuente;
+        text-align: center;
+        font-weight: bold;
+    }
+    img {
+        height: 200px;
+        transition: all 0.2s ease-in-out;
+        align-self: center;
+            &:hover {
+                transform: scale(1.1);
+            }
+    }
+
+    .div-productos {
+        div {
+            background-color: #dcc4a3;
+        }
+        p {
+            font-family: 'Roboto', sans-serif;
+            color: $colorFuente;
+        }
+        .product__title {
+            font-weight: bolder;
+            font-size: 1.1em;
+            margin-bottom: 2%;
+        }
+    }
+}
+

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda de productos enteramente veganos a base de plantas 100% natural.">
+    <meta name="keywords" content="Vegan, Leche de soja, Soja, Mani, Vegano, Soja texturizada, Natural">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -41,97 +43,83 @@
         </div>
     </nav>
     <!-- Sección de Ofertas -->   
+    <div class="div__img-ofertas">
+        <img src="./images/notCo.jpg" alt="NotCo">
+    </div>  
 
-    <section class="sectionOfertas container-fluid">
-        <div class="div__imgOfertas row col-sm-3 mt-5 pt-3">
-            <img src="./images/notCo.jpg" alt="NotCo" class="p-0 img-fluid">
-        </div>    
+    <section class="seccion container-fluid">
         <h1 class="mt-5 mb-5"> OFERTAS </h1>
-        <div class="div-productos">
-            <div class="row col-sm-3 m-3 p-0 pb-3 d-flex justify-content-center text-center rounded-4">
+        <div class="div-productos row">
+            <div class="col-sm-4 mb-4 p-0 py-3 d-flex flex-column justify-content-center text-center rounded-4">
                 <img src="./images/soyMilk.png" alt="Leche de Soja">
                 <p class="product__title"> Leche de Soja </p>
                 <p> Sin Azúcar 946ml </p>
                 <p> $317,00 </p>
-                <form action="">
-                    <label for="buy__product1">
-                        <button type="button" class="btn btn-primary button" id="buy__product1"> Agregar al carrito </button>
-                    </label>    
-                </form>
+                <div>
+                    <button type="button" class="btn btn-primary button" id="buy__product1"> Agregar al carrito </button>
+                </div>
             </div>
-            <div class="row col-sm-3 m-3 p-0 pb-3 d-flex justify-content-center text-center rounded-4">
+            <div class="col-sm-4 mb-4 p-0 py-3 d-flex flex-column justify-content-center text-center rounded-4">
                 <img src="./images/iceCream.png" alt="Helado">
                 <p class="product__title"> Helado </p>
-                <p> Cheesecake de Frambuesa 298gr </p>
+                <p> Cheesecake de Frambuesa <br> 298gr </p>
                 <p> $540,00 </p>
-                <form action="">
-                    <label for="buy__product2">
-                        <button type="button" class="btn btn-primary button" id="buy__product2"> Agregar al carrito </button>
-                    </label> 
-                </form>
+                <div>
+                    <button type="button" class="btn btn-primary button" id="buy__product2"> Agregar al carrito </button>
+                </div>
             </div>
-            <div class="row col-sm-3 m-3 p-0 pb-3 d-flex justify-content-center text-center rounded-4">
+            <div class="col-sm-4 mb-4 p-0 py-3 d-flex flex-column justify-content-center text-center rounded-4">
                 <img src="./images/burger.png" alt="Hamburguesa">
                 <p class="product__title"> Hamburguesa </p>
                 <p> 2 unidades x 80gr</p>
                 <p> $460,00 </p>
-                <form action="">
-                    <label for="buy__product3">
-                        <button type="button" class="btn btn-primary button" id="buy__product3"> Agregar al carrito </button>
-                    </label> 
-                </form>   
+                <div>
+                    <button type="button" class="btn btn-primary button" id="buy__product3"> Agregar al carrito </button> 
+                </div>
             </div>
         </div>
     </section>
     <!-- Sección de Novedades -->
-
-    <section class="sectionNovedades container-fluid mb-5">
-    <div class="div__imgNovedades row col-sm-3 mt-5">
-        <img src="./images/novedades.jpg" alt="Novedades" class="p-0 img-fluid">
+    <div class="div__img-novedades">
+        <img src="./images/novedades.jpg" alt="Novedades">
     </div>
-        <h1  class="mt-5 mb-5"> NOVEDADES </h1>
-        <div class="div-productos">      
-            <div class="row col-md-3 m-3 p-0 pb-3 d-flex justify-content-center text-center rounded-4">
+    <section class="seccion container-fluid mb-5">
+        <h1 class="mt-5 mb-5"> NOVEDADES </h1>
+        <div class="div-productos row">      
+            <div class="col-sm-4 mb-4 p-0 py-3 d-flex flex-column justify-content-center text-center rounded-4">
                 <img src="./images/chocolate.png" alt="Chocolate">
                 <p class="product__title"> Chocolate </p>
                 <p> Libre de Gluten </p>
                 <p> $450,00 </p>
-                <form action="">
-                    <label for="buy__product4">
-                        <button type="button" class="btn btn-primary button" id="buy__product4"> Agregar al carrito </button>
-                    </label> 
-                </form>
+                <div>
+                    <button type="button" class="btn btn-primary button" id="buy__product4"> Agregar al carrito </button>
+                </div>
             </div>
-            <div  class="row col-md-3 m-3 p-0 pb-3 d-flex justify-content-center text-center rounded-4">
+            <div  class="col-sm-4 mb-4 p-0 py-3 d-flex flex-column justify-content-center text-center rounded-4">
                 <img src="./images/dulce.png" alt="Dulce de Leche">
                 <p class="product__title"> Dulce de Leche </p>
-                <p> A base de leche de coco 400gr </p>
+                <p> A base de leche de coco <br> 400gr </p>
                 <p> $490,00 </p>
-                <form action="">
-                    <label for="buy__product5">
-                        <button type="button" class="btn btn-primary button" id="buy__product5"> Agregar al carrito </button>
-                    </label> 
-                </form>
+                <div>
+                    <button type="button" class="btn btn-primary button" id="buy__product5"> Agregar al carrito </button>
+                </div>
             </div>
-            <div class="row col-md-3 m-3 p-0 pb-3 d-flex justify-content-center text-center rounded-4">
+            <div class="col-sm-4 mb-4 p-0 py-3 d-flex flex-column justify-content-center text-center rounded-4">
                 <img src="./images/nuggets.png" alt="Nuggets">
                 <p class="product__title"> Nuggets </p>
-                <p> A base de vegetales sabor pollo 400g </p>
+                <p> A base de vegetales sabor pollo <br> 400gr</p>
                 <p> $790,00 </p>
-                <form action="">
-                    <label for="buy__product6">
-                        <button type="button" class="btn btn-primary button" id="buy__product6"> Agregar al carrito </button>
-                    </label> 
-                </form>
+                <div>
+                    <button type="button" class="btn btn-primary button" id="buy__product6"> Agregar al carrito </button>
+                </div>
             </div>
         </div>
     </section>
-    <footer>
-        <div>
-            <a href="https://www.instagram.com" target="_blank" class="icon"> <img src="./icons/instagram.png" alt="instagram"> </a>
-            <a href="https://whatsapp.com/" target="_blank" class="icon"> <img src="./icons/whatsapp.png" alt="whatsapp"> </a>
-            <a href="https://outlook.live.com" target="_blank" class="icon""> <img src="./icons/email.png" alt="email"> </a>
-            <p> Contáctanos </p>
+    <footer id="#footerIndex">
+        <div class="botones">
+            <div class="botones--instagram"> <a href="https://www.instagram.com/" target="_blank"> Instagram </a> </div>
+            <div class="botones--whatsapp"> <a href="https://web.whatsapp.com/" target="_blank"> Whatsapp </a> </div>
+            <div class="botones--email"> <a href="https://outlook.live.com/mail/0/" target="_blank"> Email </a> </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
