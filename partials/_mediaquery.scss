@@ -6,8 +6,8 @@
         }
     }
 
-
     .div-productos {
+        @include flex-space-around;
         div {
             width: max-content;
             margin-left: 1rem;
@@ -16,9 +16,7 @@
             align-self: center; 
             height: 23.9rem;
             padding-top: 1rem;
-
-        }
-        @include flex-space-around;
+            }
         img {
             height: 140px;
             margin-bottom: 0.50rem;
@@ -26,9 +24,27 @@
         p {
             width: auto;
             text-align: center;
-        }
+            }
         }
     
+    .filtros {
+        padding: 2%;
+    }    
+    
+    #bodyTiendas {
+        h1 {
+            font-size: $fontSizeDesktop;
+        }
+    }
+
+    .fade-in {
+        font-size: $fontSizeDesktop !important;
+    }
+    
+    .text__p {
+        font-size: 1.4em;
+        padding: 2rem;
+    }
     #bodyPerfil {
         display: grid;
         grid-template-areas:
@@ -48,5 +64,18 @@
         .info {
             grid-row-start: 3;
         }
+        }
+        .info {
+            display: grid;
+            grid-template-areas:
+                            "uno uno"
+                            "dos dos"
+                            "tres tres"
+                            "cuatro cuatro";
+            grid-template-columns: 100% 100%;
+            grid-template-rows: repeat( 4, auto);
+            .info__dos {
+                grid-row-start: 2;
+            }
         }
 }

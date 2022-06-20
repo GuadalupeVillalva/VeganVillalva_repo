@@ -42,124 +42,105 @@
             </div>
         </div>
     </nav>
-    <div class="filtros mt-5">
+    <div class="filtros">
         <p> Ordenar por </p>
         <div class="filtros-dropdown">
-            <form action="">
-                <label for="precio">
-                    <div class="btn-group">
-                        <button id="precio" class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Más relevante </button>
-                        <ul class="dropdown-menu">
-                          <li class="dropdown-item"> Mayor precio </li>
-                          <li class="dropdown-item"> Menor precio </li>
-                        </ul>
-                      </div>
-                </label>
-                <label for="marcas">
-                    <div class="btn-group">
-                        <button id="marcas" class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Marcas </button>
-                        <ul class="dropdown-menu">
-                          <li class="dropdown-item"> Todas </li>
-                          <li class="dropdown-item"> NotCo </li>
-                          <li class="dropdown-item"> Silk</li>
-                          <li class="dropdown-item"> Vegetalex </li>
-                        </ul>
-                      </div>
-                </label>
-                <label for="categorias">
-                    <div class="btn-group">
-                        <button id="categorias" class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Categorías </button>
-                        <ul class="dropdown-menu">
-                          <li class="dropdown-item"> Congelados </li>
-                          <li class="dropdown-item"> Vegetales </li>
-                          <li class="dropdown-item"> Lácteos </li>
-                          <li class="dropdown-item"> Untables </li>
-                        </ul>
-                      </div>
-                </label>
+            <div class="btn-group">
+                <button id="precio" class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Más relevante </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"> Mayor precio </li>
+                    <li class="dropdown-item"> Menor precio </li>
+                </ul>
             </div>
-            <div class="searchBar">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  </form>
-            </div>    
-        </form>
+            <div class="btn-group">
+                <button id="marcas" class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Marcas </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"> Todas </li>
+                    <li class="dropdown-item"> NotCo </li>
+                    <li class="dropdown-item"> Silk</li>
+                    <li class="dropdown-item"> Vegetalex </li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button id="categorias" class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Categorías </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"> Congelados </li>
+                    <li class="dropdown-item"> Vegetales </li>
+                    <li class="dropdown-item"> Lácteos </li>
+                    <li class="dropdown-item"> Untables </li>
+                </ul>
+            </div>
+        </div>
+        <div class="searchBar">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+        </div>    
     </div>
-        
-    <div>
-        <h1 class="mt-5 pt-5 mb-5"> TODOS LOS PRODUCTOS </h1>
-        <div class="container-fluid div-productos">
-            <div class="row col-sm-3 m-4 p-0 pb-3 pt-1 d-flex justify-content-center text-center rounded-4">
+    
+          
+    <section class="container-fluid seccion">
+        <h1 class="mt-5 mb-5"> TODOS LOS PRODUCTOS </h1>  
+        <div class="row div-productos">
+            <div class="col-sm-4 mb-4 p-0 py-3 d-flex flex-column justify-content-center text-center rounded-4">
                 <img src="../images/iceCreamChocolate.png" alt="Helado de Chocolate" class="imgIceCream">
                 <p class="product__title"> Helado </p>
                 <p> Sabor Chocolate 330gr </p>
                 <p> $550.00 </p>
-                <form action="">
-                    <label for="buy__product7">
-                        <button type="button" class="btn btn-primary button" id="buy__product7"> Agregar al carrito </button>
-                    </label> 
-                </form>
+                <div>
+                    <button type="button" class="btn btn-primary button" id="buy__product7"> Agregar al carrito </button>
+                </div>
             </div>
-            <div class="row col-sm-4 m-3 p-0 pb-3 pt-1 d-flex justify-content-center text-center rounded-4">
+            <div class="col-sm-4 mb-4 p-0 py-3 d-flex flex-column justify-content-center text-center rounded-4">
                 <img src="../images/mayonesa.png" alt="Mayonesa">
                 <p class="product__title"> Mayonesa </p>
                 <p> A base de plantas 325gr </p>
                 <p> $280.00 </p>
-                <form action="">
-                    <label for="buy__product8">
-                        <button type="button" class="btn btn-primary button" id="buy__product8"> Agregar al carrito </button>
-                    </label> 
-                </form>
+                <div>
+                    <button type="button" class="btn btn-primary button" id="buy__product8"> Agregar al carrito</button>
+                </div>    
             </div>
-            <div class="row col-sm-4 m-3 p-0 pb-3 pt-1 d-flex justify-content-center text-center rounded-4">
+            <div class="col-sm-4 mb-4 p-0 py-3 d-flex flex-column justify-content-center text-center rounded-4">
                 <img src="../images/pastaMani.png" alt="Pasta de Maní" class="img">
                 <p class="product__title"> Pasta de Maní </p>
                 <p> Sin TACC, libre de gluten 485gr </p>
                 <p> $457.00 </p>
-                <form action="">
-                    <label for="buy__product9">
-                        <button type="button" class="btn btn-primary button" id="buy__product9"> Agregar al carrito </button>
-                </label> 
-                </form>
+                <div>
+                    <button type="button" class="btn btn-primary button" id="buy__product9"> Agregar al carrito </button>
+                </div>
             </div>
         </div>
 
-        <div class="container-fluid mb-5 div-productos">
-            <div class="row col-md-4 m-3 p-0 pb-3 pt-1 d-flex justify-content-center text-center rounded-4">
+        <div class="row div-productos">
+            <div class="col-sm-4 mb-4 p-0 py-3 d-flex flex-column justify-content-center text-center rounded-4">
                 <img src="../images/notMilk.png" alt="Leche">
                 <p class="product__title"> Leche NotCo </p>
                 <p> Leche vegetal sabor original 1L</p>
                 <p> $217.00 </p>
-                <form action="">
-                    <label for="buy__product10">
-                        <button type="button" class="btn btn-primary button" id="buy__product10"> Agregar al carrito </button>
-                    </label> 
-                </form>
+                <div>
+                    <button type="button" class="btn btn-primary button" id="buy__product10"> Agregar al carrito </button>
+                </div>
             </div>
-            <div class="row col-md-4 m-3 p-0 pb-3 pt-1 d-flex justify-content-center text-center rounded-4">
+            <div class="col-sm-4 mb-4 p-0 py-3 d-flex flex-column justify-content-center text-center rounded-4">
                 <img src="../images/notMilkChocolate.png" alt="Leche Chocolate">
                 <p class="product__title"> Leche NotCo </p>
                 <p> Leche vegetal sabor chocolate 1L </p>
                 <p> $230,00 </p>
-                <form action="">
-                    <label for="buy__product11">
-                        <button type="button" class="btn btn-primary button" id="buy__product11"> Agregar al carrito </button>
-                    </label> 
-                </form>
+                <div>
+                    <button type="button" class="btn btn-primary button" id="buy__product11"> Agregar al carrito </button>
+                </div>
             </div>
-            <div class="row col-md-4 m-3 p-0 pb-3 pt-1 d-flex justify-content-center text-center rounded-4">
+            <div class="col-sm-4 mb-4 p-0 py-3 d-flex flex-column justify-content-center text-center rounded-4">
                 <img src="../images/yogurt.png" alt="Yogurt" class="img">
                 <p class="product__title"> Yogurt </p>
                 <p> Sabor Mango 1kg </p>
                 <p> $807.00 </p>
-                <form action="">
-                    <label for="buy__product12">
-                        <button type="button" class="btn btn-primary button" id="buy__product12"> Agregar al carrito </button>
-                    </label> 
-                </form>
+                <div>
+                    <button type="button" class="btn btn-primary button" id="buy__product12"> Agregar al carrito </button>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
     <footer>
         <div>
             <a href="https://www.instagram.com" target="_blank" class="icon"> <img src="../icons/instagram.png" alt="instagram"> </a>

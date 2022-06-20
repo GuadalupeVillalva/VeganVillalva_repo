@@ -1,0 +1,28 @@
+#bodyTiendas {
+    grid-template-areas: 
+                "navHeader"
+                "buscarTiendas"
+                "footer";
+    grid-template-columns: 100%;
+    h1 {
+        font-size: $fontSizeMobile;
+        text-align: center;
+        font-weight: bold;
+        color: $colorFuente;
+    }
+    .buscarTiendas {
+        grid-area: buscarTiendas;
+        display: grid;
+        justify-content: center;
+        #distancia {
+            margin: 00.10rem 0.50rem;
+        }
+    }
+    .div__map {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        margin: 0.70rem 0.50rem 4rem 0.50rem;
+    }
+}

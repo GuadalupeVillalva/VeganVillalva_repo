@@ -28,3 +28,24 @@
             color: $colorFuente;
         }
 }
+
+.btn-secondary {
+    margin-left: 0.50rem;
+    background-color: white;
+    border: none;
+    color: #14100a;
+    &:hover {
+        border: none;
+        color: #14100a;
+        box-shadow: none;
+    }
+    &:active {
+        @extend .btn-secondary;
+    }
+    &:focus {
+        @extend .btn-secondary;
+    }
+    &:active:focus {
+        @extend .btn-secondary;
+    }
+}
