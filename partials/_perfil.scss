@@ -1,4 +1,4 @@
-
+/*PERFIL*/
 #bodyPerfil {
     display: grid;
     grid-template-areas:
@@ -10,7 +10,7 @@
     grid-template-columns: 100%;
     grid-template-rows: repeat( 4, auto);
 }
-
+/*usuario*/
 .usuario {
     grid-area: usuario;
     grid-row-start: 1;
@@ -32,16 +32,23 @@
         }
         .ingresar {
             margin-right: 1rem;
-                p {
-                    color: $colorFuente;
-                    margin-bottom: 0.20rem;
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    label {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 0.50rem;
+                        color: $colorFuente;
+                    }
                 }
                 .button {
                     margin-top: 1rem;
-                }
-        }
-}
+                } 
+            }
+    }
 
+/*carrito*/
 .carrito {
     grid-area: carrito;
     grid-row-start: 3;
@@ -78,7 +85,7 @@
             }
         }
     }
-
+/*información*/
 .info {
     display: grid;
     grid-template-areas:
@@ -118,7 +125,8 @@
         }
     }
 }
-
+/*footer perfil*/
 #footerPerfil {
     margin-top: 4rem;
 }
+/*fin de PERFIL*/

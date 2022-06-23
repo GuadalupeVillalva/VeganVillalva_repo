@@ -1,7 +1,7 @@
 {
   "name": "veganvillalvaguadalupe",
   "version": "1.0.0",
-  "description": "paquete sass",
+  "description": "tienda vegana",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

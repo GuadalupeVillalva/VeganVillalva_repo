@@ -1,3 +1,4 @@
+/*SOBRE NOSOTROS*/
 #bodyNosotros {
     display: grid;
     grid-template-areas:
@@ -6,6 +7,7 @@
                     "footer";
     grid-template-columns: 100%;
     grid-template-rows: repeat( 3, auto);
+    /*texto animado fade-in*/
     .text {
         grid-area: texto;
         display: grid;
@@ -43,6 +45,8 @@
                  
             }
         }
+        /*fin de texto animado*/
+        /*texto descriptivo*/
         .text__p {
             margin: 3rem 1rem 5rem 1rem;
             text-align: center;
@@ -51,3 +55,4 @@
         }
     }
 }
+/*fin de SOBRE NOSOTROS*/

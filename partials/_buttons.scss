@@ -1,3 +1,4 @@
+/*Botones primarios*/
 .btn-primary {
     background-color: $btnColor;
     border-color: $btnBorderColor;
@@ -28,7 +29,8 @@
             color: $colorFuente;
         }
 }
-
+/*fin de botones primarios*/
+/*botones secundarios de filtros*/
 .btn-secondary {
     margin-left: 0.50rem;
     background-color: white;
@@ -49,3 +51,4 @@
         @extend .btn-secondary;
     }
 }
+/*fin de botones secundarios*/

@@ -1,5 +1,6 @@
-
+/*media query desktop*/
 @media screen and (min-width: 576px) {
+    /*sección de productos index*/
     .seccion {
         h1 {
             font-size: $fontSizeDesktop;
@@ -26,7 +27,8 @@
             text-align: center;
             }
         }
-    
+    /*fin de sección de productos*/
+    /*barra de filtros*/
     .filtros {
         padding: 2%;
         flex-direction: row;
@@ -41,7 +43,8 @@
             @extend .d-flex;
         }
     }    
-    
+    /*fin de barra de filtros*/
+    /*texto animado fade-in*/
     #bodyTiendas {
         h1 {
             font-size: $fontSizeDesktop;
@@ -56,6 +59,8 @@
         font-size: 1.4em;
         padding: 2rem;
     }
+    /*fin de texto animado*/
+    /*body perfil*/
     #bodyPerfil {
         display: grid;
         grid-template-areas:
@@ -89,4 +94,5 @@
                 grid-row-start: 2;
             }
         }
+        /*fin body perfil*/
 }

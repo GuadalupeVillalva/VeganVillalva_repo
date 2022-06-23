@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0%;
   padding: 0%;
@@ -9,6 +10,7 @@ body {
   background-color: #F9EBC8;
   font-family: 'Lato', sans-serif; }
 
+/*Botones primarios*/
 .btn-primary, .btn-primary:active, .btn-primary:visited {
   background-color: #d95435;
   border-color: #86311d;
@@ -28,6 +30,8 @@ body {
     border-color: #86311d;
     color: #221b11; }
 
+/*fin de botones primarios*/
+/*botones secundarios de filtros*/
 .btn-secondary, .btn-secondary:active, .btn-secondary:focus, .btn-secondary:active:focus {
   margin-left: 0.50rem;
   background-color: white;
@@ -38,6 +42,8 @@ body {
     color: #14100a;
     box-shadow: none; }
 
+/*fin de botones secundarios*/
+/*NAV*/
 #navHeader {
   background-color: #90a82e;
   width: 100%;
@@ -54,6 +60,9 @@ body {
 .navbar-collapse {
   background-color: #90a82e !important; }
 
+/*fin NAV*/
+/*INDEX*/
+/*imágenes de ofertas y novedades*/
 .div__img-ofertas img, .div__img-novedades img {
   width: 100%;
   height: auto;
@@ -63,6 +72,8 @@ body {
 .div__img-novedades img {
   margin-top: 3rem; }
 
+/*fin de imágenes de ofertas y novedades*/
+/*filas de productos*/
 .seccion h1 {
   font-size: 2.5em;
   color: #221b11;
@@ -88,6 +99,9 @@ body {
   font-size: 1.1em;
   margin-bottom: 2%; }
 
+/*fin de filas de productos*/
+/*fin de INDEX*/
+/*barra de filtros*/
 .filtros {
   background-color: #dcc4a3;
   padding: 4% 1%;
@@ -105,9 +119,15 @@ body {
   .filtros p {
     margin: 0%; }
 
+/*fin de barra de filtros*/
+/*TIENDAS*/
 #bodyTiendas {
-  grid-template-areas: "navHeader" "buscarTiendas" "footer";
-  grid-template-columns: 100%; }
+  grid-template-areas: "navHeader"
+ "buscarTiendas"
+ "footer";
+  grid-template-columns: 100%;
+  /*botón filtro*/
+  /*mapa*/ }
   #bodyTiendas h1 {
     font-size: 2.5em;
     text-align: center;
@@ -126,15 +146,22 @@ body {
     overflow: hidden;
     margin: 0.70rem 0.50rem 4rem 0.50rem; }
 
+/*fin de TIENDAS*/
+/*SOBRE NOSOTROS*/
 #bodyNosotros {
   display: grid;
-  grid-template-areas: "navHeader" "texto" "footer";
+  grid-template-areas: "navHeader"
+ "texto"
+ "footer";
   grid-template-columns: 100%;
-  grid-template-rows: repeat(3, auto); }
+  grid-template-rows: repeat(3, auto);
+  /*texto animado fade-in*/ }
   #bodyNosotros .text {
     grid-area: texto;
     display: grid;
-    justify-content: center; }
+    justify-content: center;
+    /*fin de texto animado*/
+    /*texto descriptivo*/ }
     #bodyNosotros .text .text__h1 {
       background-image: url(../images/background-mobile.jpg);
       background-size: cover;
@@ -167,12 +194,19 @@ body {
       font-family: 'Roboto', sans-serif;
       color: #221b11; }
 
+/*fin de SOBRE NOSOTROS*/
+/*PERFIL*/
 #bodyPerfil {
   display: grid;
-  grid-template-areas: "navHeader" "usuario" "carrito" "info" "footer";
+  grid-template-areas: "navHeader"
+ "usuario"
+ "carrito"
+ "info"
+ "footer";
   grid-template-columns: 100%;
   grid-template-rows: repeat(4, auto); }
 
+/*usuario*/
 .usuario {
   grid-area: usuario;
   grid-row-start: 1;
@@ -192,12 +226,18 @@ body {
       color: #221b11; }
   .usuario .ingresar {
     margin-right: 1rem; }
-    .usuario .ingresar p {
-      color: #221b11;
-      margin-bottom: 0.20rem; }
+    .usuario .ingresar form {
+      display: flex;
+      flex-direction: column; }
+      .usuario .ingresar form label {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.50rem;
+        color: #221b11; }
     .usuario .ingresar .button {
       margin-top: 1rem; }
 
+/*carrito*/
 .carrito {
   grid-area: carrito;
   grid-row-start: 3;
@@ -228,9 +268,13 @@ body {
     margin-left: 2rem;
     margin-bottom: 3rem; }
 
+/*información*/
 .info {
   display: grid;
-  grid-template-areas: "uno" "dos" "tres" "cuatro";
+  grid-template-areas: "uno"
+ "dos"
+ "tres"
+ "cuatro";
   grid-template-columns: 100%;
   grid-template-rows: repeat(4, auto); }
   .info .info_uno {
@@ -255,9 +299,12 @@ body {
     .info div img {
       height: 55px; }
 
+/*footer perfil*/
 #footerPerfil {
   margin-top: 4rem; }
 
+/*fin de PERFIL*/
+/*footer*/
 footer {
   display: flex;
   justify-content: center;
@@ -273,7 +320,10 @@ footer {
     padding-top: 0.80rem;
     color: #121212; }
 
+/*fin de footer*/
+/*media query desktop*/
 @media screen and (min-width: 576px) {
+  /*sección de productos index*/
   .seccion h1 {
     font-size: 4em; }
   .div-productos {
@@ -294,6 +344,8 @@ footer {
     .div-productos p {
       width: auto;
       text-align: center; }
+  /*fin de sección de productos*/
+  /*barra de filtros*/
   .filtros {
     padding: 2%;
     flex-direction: row;
@@ -302,6 +354,8 @@ footer {
       display: none; }
     .filtros .d-flex, .filtros .me-2 {
       margin: 0%; }
+  /*fin de barra de filtros*/
+  /*texto animado fade-in*/
   #bodyTiendas h1 {
     font-size: 4em; }
   .fade-in {
@@ -309,9 +363,14 @@ footer {
   .text__p {
     font-size: 1.4em;
     padding: 2rem; }
+  /*fin de texto animado*/
+  /*body perfil*/
   #bodyPerfil {
     display: grid;
-    grid-template-areas: "navHeader navHeader" "usuario carrito" "info info" "footer footer";
+    grid-template-areas: "navHeader navHeader"
+ "usuario carrito"
+ "info info"
+ "footer footer";
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(4, auto); }
     #bodyPerfil .usuario {
@@ -323,8 +382,12 @@ footer {
       grid-row-start: 3; }
   .info {
     display: grid;
-    grid-template-areas: "uno uno" "dos dos" "tres tres" "cuatro cuatro";
+    grid-template-areas: "uno uno"
+ "dos dos"
+ "tres tres"
+ "cuatro cuatro";
     grid-template-columns: 100% 100%;
     grid-template-rows: repeat(4, auto); }
     .info .info__dos {
-      grid-row-start: 2; } }
+      grid-row-start: 2; }
+  /*fin body perfil*/ }
