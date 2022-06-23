@@ -1,4 +1,4 @@
-/*media query desktop*/
+/*media query*/
 @media screen and (min-width: 576px) {
     /*sección de productos index*/
     .seccion {
@@ -95,4 +95,30 @@
             }
         }
         /*fin body perfil*/
+}
+$grid-area: (
+    helado: helado,
+    mayo: mayo,
+    mani: mani,
+    leche: lecheCho,
+    yog: yog,
+);
+/*media query desktop para PRODUCTOS*/
+@media screen and (min-width: 1130px) {
+    #bodyProductos {
+        .div-productos {
+            display: grid;
+            grid-template-areas:
+                            "helado mayo mani"
+                            "leche lecheCho yog";
+            grid-template-columns: repeat( 3, 1fr);
+            grid-template-rows: repeat( 4, auto);
+            justify-items: center;
+            @each $name, $value in $grid-area {
+                .#{$name}{
+                    grid-area: $value;
+                }
+            }
+        }
+    }   
 }

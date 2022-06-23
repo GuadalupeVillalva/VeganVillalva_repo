@@ -10,6 +10,8 @@ body {
   background-color: #F9EBC8;
   font-family: 'Lato', sans-serif; }
 
+/*colores*/
+/*tamaños de fuente*/
 /*Botones primarios*/
 .btn-primary, .btn-primary:active, .btn-primary:visited {
   background-color: #d95435;
@@ -122,9 +124,7 @@ body {
 /*fin de barra de filtros*/
 /*TIENDAS*/
 #bodyTiendas {
-  grid-template-areas: "navHeader"
- "buscarTiendas"
- "footer";
+  grid-template-areas: "navHeader" "buscarTiendas" "footer";
   grid-template-columns: 100%;
   /*botón filtro*/
   /*mapa*/ }
@@ -150,9 +150,7 @@ body {
 /*SOBRE NOSOTROS*/
 #bodyNosotros {
   display: grid;
-  grid-template-areas: "navHeader"
- "texto"
- "footer";
+  grid-template-areas: "navHeader" "texto" "footer";
   grid-template-columns: 100%;
   grid-template-rows: repeat(3, auto);
   /*texto animado fade-in*/ }
@@ -198,11 +196,7 @@ body {
 /*PERFIL*/
 #bodyPerfil {
   display: grid;
-  grid-template-areas: "navHeader"
- "usuario"
- "carrito"
- "info"
- "footer";
+  grid-template-areas: "navHeader" "usuario" "carrito" "info" "footer";
   grid-template-columns: 100%;
   grid-template-rows: repeat(4, auto); }
 
@@ -271,10 +265,7 @@ body {
 /*información*/
 .info {
   display: grid;
-  grid-template-areas: "uno"
- "dos"
- "tres"
- "cuatro";
+  grid-template-areas: "uno" "dos" "tres" "cuatro";
   grid-template-columns: 100%;
   grid-template-rows: repeat(4, auto); }
   .info .info_uno {
@@ -321,7 +312,7 @@ footer {
     color: #121212; }
 
 /*fin de footer*/
-/*media query desktop*/
+/*media query*/
 @media screen and (min-width: 576px) {
   /*sección de productos index*/
   .seccion h1 {
@@ -367,10 +358,7 @@ footer {
   /*body perfil*/
   #bodyPerfil {
     display: grid;
-    grid-template-areas: "navHeader navHeader"
- "usuario carrito"
- "info info"
- "footer footer";
+    grid-template-areas: "navHeader navHeader" "usuario carrito" "info info" "footer footer";
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(4, auto); }
     #bodyPerfil .usuario {
@@ -382,12 +370,28 @@ footer {
       grid-row-start: 3; }
   .info {
     display: grid;
-    grid-template-areas: "uno uno"
- "dos dos"
- "tres tres"
- "cuatro cuatro";
+    grid-template-areas: "uno uno" "dos dos" "tres tres" "cuatro cuatro";
     grid-template-columns: 100% 100%;
     grid-template-rows: repeat(4, auto); }
     .info .info__dos {
       grid-row-start: 2; }
   /*fin body perfil*/ }
+
+/*media query desktop para PRODUCTOS*/
+@media screen and (min-width: 1130px) {
+  #bodyProductos .div-productos {
+    display: grid;
+    grid-template-areas: "helado mayo mani" "leche lecheCho yog";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    justify-items: center; }
+    #bodyProductos .div-productos .helado {
+      grid-area: helado; }
+    #bodyProductos .div-productos .mayo {
+      grid-area: mayo; }
+    #bodyProductos .div-productos .mani {
+      grid-area: mani; }
+    #bodyProductos .div-productos .leche {
+      grid-area: lecheCho; }
+    #bodyProductos .div-productos .yog {
+      grid-area: yog; } }
